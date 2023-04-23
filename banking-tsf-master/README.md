@@ -1,9 +1,9 @@
-# banking-tsf
+# Banking-tsf
 Name : Banking Web Application
 
-Hola, Suhil Here..!
+Hello, Sohom Here..!
 This is My First Task as Intern at the Sparks Foundation
 
-This Project Includes Transfer of Money between Account and Displays Successful and Failed Transaction
+This Project Includes Transfer of Money between Bank Accounts 
 
 Technology Used: HTML, CSS, Java Script, MySQL, Flask-Python
