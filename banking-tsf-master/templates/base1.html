@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block title %} {% endblock title %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+  <style>
+    .bn62 {
+      color: #1cc49d;
+      background-color: rgba(0,0,0,.5);
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3em;
+      width: 8em;
+      font-size: large;
+      font-weight: 600;
+    }
+
+    .bn62:hover{
+      opacity:0.78;
+      color:white;
+    }
+
+    .table-desc{
+      font-weight:bold;
+    }
+    .table-head{
+      color:white;
+    }
+
+    .subbtn{
+      border-radius:20px;
+      background-color:rgba(0,0,0,.5);
+      
+    }
+    .subbtn:hover{
+      color:white;
+    }
+
+    .check-bal{
+      margin-top:10px;
+      text-align:center;
+      height:40px;
+      width:200px;
+      border-style: solid;
+      border-width: 1px;
+      color:white;
+      border-radius:10px; 
+      border-color:white;
+      background-color:rgb(36 164 145);
+      transition: background-color 0.20s, color 0.20s;
+
+    }
+
+    .check-bal:hover{
+      color:rgb(36 164 145);
+      background-color:white;
+    }
+
+    .check-bal:active{
+      opacity:0.6;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: rgb(0,131,116);">
+
+  <!-- ======= Header ======= -->
+  
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+
+      </a>
+      {% block navbar %}
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#senmoney">Send Money</a></li>
+          <li><a href="#customer">All Customer</a></li>
+          <li><a href="#transation">Transactions</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+      {% endblock navbar %}
+      
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+
+
+  <main id="main">
+
+  {% block body %}
+  
+  {% endblock body %}
+  <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.1/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.11.1/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <script>
+
+  $(document).ready(function(){
+  $("#dataTable").dataTable();
+  });
+
+  </script>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
