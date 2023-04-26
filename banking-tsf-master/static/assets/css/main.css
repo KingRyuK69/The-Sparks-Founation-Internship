@@ -26,7 +26,7 @@
 :root {
     --color-default: #222222;
     --color-primary: #3d0083;
-    --color-secondary: #f85a40;
+    --color-secondary: #f840d3;
 }
 
 
@@ -195,7 +195,7 @@ section {
 }
 
 .scroll-top:hover {
-    background: rgba(248, 90, 64, 0.8);
+    background: rgba(245, 64, 248, 0.8);
     color: #fff;
 }
 
@@ -347,7 +347,7 @@ section {
 }
 
 .header .logo h1 span {
-    color: #f96f59;
+    color: #e959f9;
 }
 
 .sticked-header-offset {
@@ -1079,7 +1079,7 @@ section {
 }
 
 .testimonials .testimonial-item .stars i {
-    color: #ffc107;
+    color: #07fff7;
     margin: 0 1px;
 }
 
@@ -1520,7 +1520,7 @@ section {
     height: 86px;
     width: 86px;
     border-radius: 50%;
-    background: #87c1bb;
+    background: #a387c1;
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
 }
@@ -2616,7 +2616,7 @@ section {
 }
 
 .blog .comments .reply-form .btn-primary:hover {
-    background-color: rgba(248, 90, 64, 0.8);
+    background-color: rgba(230, 64, 248, 0.8);
 }
 
 
